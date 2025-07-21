@@ -22,7 +22,7 @@ def top_ten(subreddit):
             return
         data = response.json()
         posts = data.get("data", {}).get("children", [])
-        # ATTENTION : ici il faut traiter tous les cas possibles
+        
         if len(posts) == 0:
             print("None")
             return
