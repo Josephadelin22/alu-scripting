@@ -31,4 +31,4 @@ def recurse(subreddit, hot_list=None, after=None):
             return recurse(subreddit, hot_list, next_after)
         return hot_list
     except Exception:
-        return
+        return None
